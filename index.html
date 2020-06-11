@@ -31,15 +31,15 @@
     <script>
       mapboxgl.accessToken = 'pk.eyJ1IjoibWFucWl6aGFuZyIsImEiOiJjazIwc2VzMncwMHo4M2NwYXA3c29qZ29jIn0.pNUrsdgYEroaSBSDwTHfRA';
       var map = new mapboxgl.Map({
-        container: 'map', // container id
-        style: 'mapbox://styles/manqizhang/ckba8op210aez1jqqh82fbkz0', // stylesheet location
+        container: 'map', 
+        style: 'mapbox://styles/manqizhang/ckba8op210aez1jqqh82fbkz0', 
         center: [-122.265, 47.633],
         zoom: 9.88
       });
 
       map.on('click', function(e) {
         var features = map.queryRenderedFeatures(e.point, {
-          layers: ['environmental-education-centers'] // replace this with the name of the layer
+          layers: ['environmental-education-centers'] 
         });
 
         if (!features.length) {
